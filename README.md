@@ -41,8 +41,8 @@ Ruby/Ruby on Rails/HTML/CSS/JavaScript/MySQL/Github/Visual Studio Code
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | text       | string     |                                |
-| commentary | string     |                                |
 | answer     | string     | null: false                    |
+| commentary | string     |                                |
 | user       | references | null: false, foreign_key: true |
 
 ### Association
