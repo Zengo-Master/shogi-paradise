@@ -1,0 +1,18 @@
+<div class="questions-row">
+  <% @questions.each do |question| %>
+    <div class="question">
+      <div class="image">
+        <%= image_tag item.image.variant(resize:'500x500') if item.image.attached? %>
+      </div>
+      <div class="questioner">
+        <%= question.user.nickname %>
+      </div>
+      <div class="text">
+        <%= question.text %>
+      </div>
+      <div class="answer-link">
+        <%= link_to "解答", question_path(question.id) %>
+      </div>
+    </div>
+  <% end %>
+</div>
