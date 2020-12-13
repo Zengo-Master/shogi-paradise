@@ -4,6 +4,5 @@ class Question < ApplicationRecord
 end
 
 with_options presence: true do
-  validates :image
   validates :answer
 end
