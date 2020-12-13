@@ -1,0 +1,18 @@
+<div class="question">
+  <div class="image">
+    <%= image_tag question.image.variant(resize:'500x500') if question.image.attached? %>
+  </div>
+  <div class="answer">
+    <%= question.answer %>
+  </div>
+  <div class="commentary">
+    <%= question.commentary %>
+  </div>
+</div>
+
+<div class="edit">
+  <%= link_to "編集", edit_question_path(@question.id), method: :get, class: "edit-btn" %>
+</div>
+<div class="destroy">
+  <%= link_to "削除", question_path(@question.id), method: :delete,  class: "destroy-btn" %>
+</div>

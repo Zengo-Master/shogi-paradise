@@ -37,8 +37,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @comment = Comment.new
-    @comments = @question.comments.includes(:user)
+
   end
 
   private
@@ -57,6 +56,5 @@ class QuestionsController < ApplicationController
       redirect_to action: :index
     end
   end
-
 
 end
