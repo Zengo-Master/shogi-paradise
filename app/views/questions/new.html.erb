@@ -15,6 +15,20 @@
           </div>
         </div>
 
+        <div class="input-field">
+          <div class="answer">
+            <%= f.label :text, '解答' %><span class="hissu">必須</span><br />
+            <%= f.text_area :text, placeholder: '例：７６歩' %>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <div class="answer">
+            <%= f.label :text, '解説' %><span class="hissu">任意</span><br />
+            <%= f.text_area :text, placeholder: '想定される変化', size: "10x5" %>
+          </div>
+        </div>
+
       <% end %>
     </div>
 </div>

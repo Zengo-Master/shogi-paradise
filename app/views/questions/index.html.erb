@@ -2,7 +2,7 @@
   <% @questions.each do |question| %>
     <div class="question">
       <div class="image">
-        <%= image_tag question.image.variant(resize:'500x500') if question.image.attached? %>
+        <%= image_tag question.image.variant(resize:'500x550') if question.image.attached? %>
       </div>
       <div class="questioner">
         <%= question.user.nickname %>
