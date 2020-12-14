@@ -1,6 +1,6 @@
 <div class="whole">
   <div class="container">
-    <h2>＜問題投稿＞</h2>
+    <h2>＜問題修正＞</h2>
     <%= form_with(model: @question, class: 'new_field', local: true) do |f| %>
 
       <div class="field">
@@ -24,7 +24,7 @@
       </div>
 
       <div class="send">
-        <%= f.submit "投稿する", class: 'send-btn' %>
+        <%= f.submit "修正する", class: 'send-btn' %>
       </div><br>
 
     <% end %>

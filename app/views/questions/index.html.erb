@@ -1,18 +1,23 @@
 <div class="questions-row">
   <% @questions.each do |question| %>
     <div class="question">
+
       <div class="image">
         <%= image_tag question.image.variant(resize:'500x550') if question.image.attached? %>
       </div>
+
       <div class="questioner">
         <%= question.user.nickname %>
       </div>
+
       <div class="text">
         <%= question.text %>
       </div>
+
       <div class="answer-link">
-        <%= link_to "解答", question_path(question.id) %>
+        <%= link_to "解答を見る", question_path(question.id) %>
       </div>
+
     </div>
   <% end %>
 </div>

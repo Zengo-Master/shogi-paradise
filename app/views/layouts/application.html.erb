@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ShogiParadise</title>
+    <title>次の一手パラダイス</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,35 +10,31 @@
   </head>
 
   <body>
-  <header class="header">
-    <div class="header__bar row">
-      <h1 class="grid-6"><a href="/">ShogiParadise</a></h1>
+
+  <header>
+    <div class="header_contents">
+      <h1 class="app-title"><a href="/">次の一手パラダイス</a></h1>
       <% if user_signed_in? %>
-        <div class="user_nav grid-6">
-          <span><%= current_user.nickname %>
-            <ul class="user__info">
-              <li>
-                <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-              </li>
-            </ul>
-          </span>
-          <%= link_to "投稿する", new_tweet_path, class: "post" %>
+        <div class="user_info">
+          <%= link_to "投稿する", new_question_path, class: "post" %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
         </div>
       <% else %>
-        <div class="grid-6">
+        <div class="user_info">
           <%= link_to "ログイン", new_user_session_path, class: "post" %>
           <%= link_to "新規登録", new_user_registration_path, class: "post" %>
         </div>
       <% end %>
     </div>
-    
   </header>
+
     <%= yield %>
+
     <footer>
       <p>
-        Copyright ShogiParadise 2021.
+        Copyright ShogiParadise.
       </p>
     </footer>
   </body>
+
 </html>

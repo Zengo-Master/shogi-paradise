@@ -1,35 +1,31 @@
-<div class="contents row">
-  <div class="container">
-    <h2>新規登録</h2>
-    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-      <%= devise_error_messages! %>
+<div class="container">
+  <h2>＜新規登録＞</h2>
+  <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+    <%= devise_error_messages! %>
 
-      <div class="field">
-        <%= f.label :nickname, 'ニックネーム' %> <span>８文字以内</span><br />
-        <%= f.text_field :nickname, autofocus: true, maxlength: "8" %>
-      </div>
+    <div class="field">
+      <%= f.label :nickname, 'ニックネーム' %><br />
+      <%= f.text_field :nickname, placeholder: '', autofocus: true, size: "25x1" %>
+    </div>
 
-      <div class="field">
-        <%= f.label :email, 'メールアドレス' %><br />
-        <%= f.email_field :email %>
-      </div>
+    <div class="field">
+      <%= f.label :email, 'メールアドレス' %><br />
+      <%= f.email_field :email, size: "25x1" %>
+    </div>
 
-      <div class="field">
-        <%= f.label :password, 'パスワード' %>
-        <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
-      </div>
+    <div class="field">
+      <%= f.label :password, 'パスワード(6文字以上の半角英数字)' %><br />
+      <%= f.password_field :password, placeholder: '', size: "25x1" %>
+    </div>
 
-      <div class="field">
-        <%= f.label :password_confirmation, 'パスワード(確認)' %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
-      </div>
+    <div class="field">
+      <%= f.label :password_confirmation, 'パスワード(確認)' %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off", size: "25x1" %>
+    </div>
 
-      <div class="actions">
-        <%= f.submit "登録" %>
-      </div>
-    <% end %>
-  </div>
+    <div class="actions">
+      <%= f.submit "登録" %>
+    </div>
+
+  <% end %>
 </div>

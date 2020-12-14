@@ -21,8 +21,11 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    question = Question.find(params[:id])
-    question.destroy
+    if @question.destroy
+      redirect_to root_path
+    else
+      redirect_to question_path(@question.id)
+    end
   end
 
   def edit
@@ -50,7 +53,6 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
   end
 
-  # リダイレクトの処理　unlessはfalseなら処理が実行される
   def move_to_index
     unless user_signed_in?
       redirect_to action: :index

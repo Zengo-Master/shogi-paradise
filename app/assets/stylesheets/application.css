@@ -18,3 +18,39 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
+header {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.header_contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.user_info {
+  margin-left: 30px;
+}
+
+.post {
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border: 2px solid red;
+  background-color: yellow;
+}
+
+footer {
+  margin: 10px;
+  padding: 10px;
+  border-top: 1px solid black;
+  text-align: center;
+}
