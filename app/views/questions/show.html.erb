@@ -12,13 +12,15 @@
     </div>
   </div>
 
-  <% if user_signed_in? && current_user.id == @question.user_id %>
-  <div class="edit">
-    <%= link_to "編集", edit_question_path(@question.id), method: :get, class: "edit-btn" %>
+  <div class="user_btn">
+    <% if user_signed_in? && current_user.id == @question.user_id %>
+    <div class="edit">
+      <%= link_to "編集", edit_question_path(@question.id), method: :get, class: "edit-btn" %>
+    </div>
+    <div class="destroy">
+      <%= link_to "削除", question_path(@question.id), method: :delete,  class: "destroy-btn" %>
+    </div>
+    <% end %>
   </div>
-  <div class="destroy">
-    <%= link_to "削除", question_path(@question.id), method: :delete,  class: "destroy-btn" %>
-  </div>
-  <% end %>
 
 </div>

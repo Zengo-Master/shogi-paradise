@@ -17,8 +17,15 @@
   margin-bottom: 10px;
 }
 
+.user_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
 .edit {
-  margin:40px;
+
 }
 
 .edit-btn {
@@ -39,5 +46,5 @@
   background-color: lightgray;
   width: auto;
   padding: 10px 20px;
-  margin: 10px 0px;
+  margin-left: 20px;
 }
