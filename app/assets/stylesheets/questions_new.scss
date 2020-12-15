@@ -2,20 +2,18 @@
 
 }
 
-.new-title {
-  font-size: 70px;
-}
-
 .new-field {
   margin: 10px 0px;
 }
 
-.field {
+.field, .send-btn {
   font-size: 50px;
+  margin: 20px;
 }
 
 .hissu {
   color: white;
+  font-size: 30px;
   font-weight: bold;
   background-color: red;
   border-radius: 10%;
