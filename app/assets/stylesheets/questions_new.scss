@@ -8,12 +8,16 @@
 
 .field, .send-btn {
   font-size: 50px;
-  margin: 20px;
+  margin: 50px;
+}
+
+.inner {
+  font-size: 50px;
 }
 
 .hissu {
-  color: white;
   font-size: 30px;
+  color: white;
   font-weight: bold;
   background-color: red;
   border-radius: 10%;
@@ -22,7 +26,7 @@
 }
 
 .ninni {
-  font-size: smaller;
+  font-size: 30px;
   color: #FFFFFF;
   font-weight: bold;
   background-color: black;
