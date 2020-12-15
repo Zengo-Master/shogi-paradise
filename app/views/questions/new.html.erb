@@ -1,7 +1,7 @@
 <div class="whole">
   <div class="container">
-    <h2>＜問題投稿＞</h2>
-    <%= form_with(model: @question, class: 'new_field', local: true) do |f| %>
+    <p class="new-title">＜問題投稿＞</p>
+    <%= form_with(model: @question, class: 'new-field', local: true) do |f| %>
 
       <div class="field">
         <%= f.label :image, '問題図', class: 'question-image' %><span class="hissu">必須</span><br />
