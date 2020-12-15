@@ -1,29 +1,29 @@
 <div class="whole">
   <div class="container">
-    <%= form_with(model: @question, class: 'new_field', local: true) do |f| %>
+    <%= form_with(model: @question, class: 'new-field', local: true) do |f| %>
 
       <div class="field">
         <%= f.label :image, '問題図', class: 'question-image' %><span class="hissu">必須</span><br />
-        <%= f.file_field :image %>
+        <%= f.file_field :image, class: "inner" %>
       </div>
 
       <div class="field">
         <%= f.label :text, 'ひとこと' %><span class="ninni">任意</span><br />
-        <%= f.text_area :text, placeholder: 'ヒントなど', size: "30x5" %>
+        <%= f.text_area :text, placeholder: 'ヒントなど', size: "25x5", class: "inner" %>
       </div>
 
       <div class="field">
         <%= f.label :answer, '解答' %><span class="hissu">必須</span><br />
-        <%= f.text_field :answer, placeholder: '例）７６歩' %>
+        <%= f.text_field :answer, placeholder: '例)７６歩', class: "inner" %>
       </div>
 
       <div class="field">
         <%= f.label :commentary, '解説' %><span class="ninni">任意</span><br />
-        <%= f.text_area :commentary, placeholder: '想定される変化など', size: "30x5" %>
+        <%= f.text_area :commentary, placeholder: '想定される変化など', size: "25x5", class: "inner" %>
       </div>
 
       <div class="send">
-        <%= f.submit "修正する", class: 'send-btn' %>
+        <%= f.submit "変更する", class: 'send-btn' %>
       </div><br>
 
     <% end %>

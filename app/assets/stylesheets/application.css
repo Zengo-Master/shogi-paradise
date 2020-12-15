@@ -32,7 +32,8 @@ header {
 }
 
 .app-title {
-  font-size: 50px;
+  font-size: 55px;
+  font-weight: bolder;
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 }
 
 .user_info {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .post {
