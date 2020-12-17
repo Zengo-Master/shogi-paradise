@@ -6,7 +6,7 @@ shogi-paradise
 
 # 本番環境
 ## Heroku
-https://shogi-paradises.herokuapp.com/
+https://shogi-paradise.herokuapp.com/
 <p>ユーザー名：zengoma</p>
 <p>パスワード：114514</p>
 
