@@ -16,7 +16,7 @@ https://shogi-paradise.herokuapp.com/
 <p>Twitterで、将棋で発見した面白い手を紹介している人が多くおられます。それらを共有できればみんなの勉強になると思い、当アプリを開発しました。</p>
 
 # 使用技術（開発環境）
-Ruby/Ruby on Rails/HTML/CSS/JavaScript/MySQL/Github/Visual Studio Code
+Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 
 # DB設計
 
