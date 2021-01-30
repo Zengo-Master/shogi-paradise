@@ -40,6 +40,7 @@ Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 | text       | string     |                                |
 | answer     | string     | null: false                    |
 | commentary | string     |                                |
+| kifu       | text       |                                |
 | user       | references | null: false, foreign_key: true |
 
 ### Association

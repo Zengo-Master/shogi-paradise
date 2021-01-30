@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_12_14_053352) do
     t.text "text", null: false
     t.string "answer", null: false
     t.text "commentary", null: false
+    t.text "kifu", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
