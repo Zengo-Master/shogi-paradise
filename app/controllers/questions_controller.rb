@@ -46,7 +46,7 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:image, :text, :answer, :commentary).merge(user_id: current_user.id)
+    params.require(:question).permit(:image, :text, :answer, :commentary, :kifu).merge(user_id: current_user.id)
   end
 
   def set_question

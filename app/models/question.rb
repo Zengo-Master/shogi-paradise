@@ -3,7 +3,7 @@ class Question < ApplicationRecord
   has_one_attached :image
 
   with_options presence: true do
-    # validates :image
-    # validates :answer
+    validates :image
+    validates :answer
   end
 end
