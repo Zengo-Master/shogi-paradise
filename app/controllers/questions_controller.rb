@@ -43,6 +43,10 @@ class QuestionsController < ApplicationController
 
   end
 
+  def search
+    @questions = Question.search(params[:keyword])
+  end
+
   private
 
   def question_params

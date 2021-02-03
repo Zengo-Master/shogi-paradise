@@ -1,3 +1,18 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.search-input {
+  font-size: 45px;
+}
+
+.search-btn {
+  font-size: 40px;
+}
+
 .question {
   width: 80%;
   margin: 40px auto;

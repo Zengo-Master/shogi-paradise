@@ -6,4 +6,12 @@ class Question < ApplicationRecord
     validates :image
     validates :answer
   end
+
+  def self.search(search)
+    if search != ""
+      Question.where('title LIKE(?)', "%#{search}%")
+    else
+      Question.all
+    end
+  end
 end
