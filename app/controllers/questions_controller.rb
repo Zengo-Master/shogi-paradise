@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :set_question, only: [:edit, :show, :destroy, :update]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @questions = Question.all.order('created_at DESC')
