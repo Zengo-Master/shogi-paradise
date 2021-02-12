@@ -8,7 +8,7 @@
       <%= @question.answer %>
     </div>
     <div class="commentary">
-      <%= @question.commentary %>
+      <%= safe_join(@question.commentary.split("\n"),tag(:br)) %>
     </div>
   </div>
 
