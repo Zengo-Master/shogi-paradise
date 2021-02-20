@@ -46,3 +46,18 @@ Ruby/Ruby on Rails/HTML/CSS/MySQL/Github/Visual Studio Code
 ### Association
 
 - belongs_to :user
+
+# CLEARDB_DATABASE_URL
+bd3df5e585f51f:9121ab09@us-cdbr-east-02.cleardb.com/heroku_31b20374165ad31
+
+## ホスト
+us-cdbr-east-02.cleardb.com
+
+## ユーザー名
+bd3df5e585f51f
+
+## パスワード
+9121ab09
+
+## データベース
+heroku_31b20374165ad31
